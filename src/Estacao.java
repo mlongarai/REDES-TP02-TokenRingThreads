@@ -28,7 +28,7 @@ class Estacao implements Runnable {
                     // se a originadora e ela, retira mensagem do meio
                 else {
                     if ( m.destino.equals(this.nome) )
-                        System.out.println(nome+":> mensagem "+m.info() +" chegou");
+                        System.out.println(nome+":> mensagem "+m.info() +" OK");
                     saida.poe(p);
                     // se o destino e ela ou e´ para outra estacao, manda a mensagem adiante
                 }
