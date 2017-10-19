@@ -79,7 +79,6 @@ class Fila {
 
 }  // fim Fila
 
-
 class MeioFisico {
     Pacote pac = null;
 
@@ -163,7 +162,6 @@ class Estacao implements Runnable {
 
 } // Estacao
 
-
 class Leitora implements Runnable	{
     // pode ser colocada no final de uma sequencia de estacoes
     // nao recoloca os dados no anel - ou seja, abre o anel
@@ -186,7 +184,6 @@ class Leitora implements Runnable	{
         }
     }
 }
-
 
 class Monitora implements Runnable	{
     // monitora o anel dizendo o que passou naquele ponto
@@ -228,9 +225,7 @@ public class TokenRingThreads {
 
             while ((linhaArquivo = inputFile.readLine()) != null) {
                 // Adiciona no Arraylist o IP:PORTA
-                parametros.add(linhaArquivo);
                 // Adiciona no Arraylist o APELIDO
-                parametros.add(linhaArquivo);
                 // Adiciona no Arraylist o TEMPO do TOKEN
                 parametros.add(linhaArquivo);
             }
