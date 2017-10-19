@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10f90536-e8fe-468b-8ef1-8e0137bfd9fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Estacao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Fila.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FilaException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Leitora.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MeioFisico.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Monitora.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Pacote.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Token.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/msg.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TokenRingThreads.java" afterPath="$PROJECT_DIR$/src/TokenRingThreads.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,16 +13,19 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="TokenRingThreads.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TokenRingThreads.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="427">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1508416279710" expanded="false" signature="309:317" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -153,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/Estacao.java" />
         <option value="$PROJECT_DIR$/src/Leitora.java" />
         <option value="$PROJECT_DIR$/src/Monitora.java" />
-        <option value="$PROJECT_DIR$/src/TokenRingThreads.java" />
         <option value="$PROJECT_DIR$/src/Pacote.java" />
         <option value="$PROJECT_DIR$/src/Token.java" />
         <option value="$PROJECT_DIR$/src/msg.java" />
+        <option value="$PROJECT_DIR$/src/TokenRingThreads.java" />
       </list>
     </option>
   </component>
@@ -516,7 +510,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1947497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -619,10 +613,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TokenRingThreads.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="427">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1508416279710" expanded="false" signature="309:317" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>

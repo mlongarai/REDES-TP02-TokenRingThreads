@@ -1,9 +1,3 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-
 /**
  * Created by longarai on 19/10/17.
  */
@@ -14,7 +8,7 @@ public class TokenRingThreads {
     public static void main(String s[]) {
 
         String linhaArquivo;
-
+        /*
         // Le parametros do arquivo
         ArrayList<String> parametros = new ArrayList<String>();
 
@@ -34,6 +28,7 @@ public class TokenRingThreads {
         } catch (IOException e) {
             e.printStackTrace ();
         }
+        */
 
         // criacao e encadeamento de threads representando estacoes
         MeioFisico inE1 = new MeioFisico();
