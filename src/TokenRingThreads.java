@@ -1,3 +1,11 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
 /**
  * Created by longarai on 19/10/17.
  */
@@ -8,19 +16,43 @@ public class TokenRingThreads {
     public static void main(String s[]) {
 
         String linhaArquivo;
-        /*
+
         // Le parametros do arquivo
-        ArrayList<String> parametros = new ArrayList<String>();
+        // <IP, [PORTA, APELIDO, TIME]>
+        HashMap<String, List<String>> parametros = new HashMap<> ();
+        List<String> valores = new ArrayList<> ();
+        String tempIP = null;
+        String tempPORTA = null;
 
         // Le arquivo de entrada com lista de IPs dos roteadores vizinhos
         try (BufferedReader inputFile = new BufferedReader(new FileReader (leitura))) {
             System.out.println("Lendo arquivo: " + leitura);
 
             while ((linhaArquivo = inputFile.readLine()) != null) {
-                // Adiciona no Arraylist o IP:PORTA
-                // Adiciona no Arraylist o APELIDO
-                // Adiciona no Arraylist o TEMPO do TOKEN
-                parametros.add(linhaArquivo);
+
+                // Só entra a cada IP:PORTA
+             if (linhaArquivo.contains ( ":" )) {
+                 valores = new ArrayList<> ();
+                 tempIP = null;
+                 tempPORTA = null;
+
+                 String linhaSplit[] = linhaArquivo.split ( ":" );
+                 tempIP = linhaSplit[ 0 ];
+                 tempPORTA = linhaSplit[ 1 ].toString ();
+
+                 valores.add (tempPORTA); // AQUI ADD A PORTA EM VALORES
+
+
+                 continue;
+             }
+
+             // Adiciona o resto das linhas, menos a primeira, entao fica linha APELIDO e TIME
+             valores.add ( linhaArquivo );
+
+
+             // vincula o ip com seus valores ficando igual a isto <IP, [PORTA, APELIDO, TIME]>
+             if (valores.size () == 3)
+                 parametros.put ( tempIP, valores );
             }
         } catch (FileNotFoundException ex) {
             //Logger.getLogger(TokenRingThreads.class.getName()).log(Level.SEVERE, null, ex);
@@ -28,7 +60,11 @@ public class TokenRingThreads {
         } catch (IOException e) {
             e.printStackTrace ();
         }
-        */
+
+        // debug
+        System.out.println (valores.size ());
+        System.out.print ( parametros );
+
 
         // criacao e encadeamento de threads representando estacoes
         MeioFisico inE1 = new MeioFisico();
