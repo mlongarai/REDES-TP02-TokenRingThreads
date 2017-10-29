@@ -13,7 +13,7 @@ class msg extends Pacote {
         conteudo=cont;
     }
     public void info(String s) {
-        System.out.println(s+" ("+origem+" , "+destino+" , "+conteudo+" )");
+        System.out.println(s + conteudo);
     }
-    public String info() { return  (" ( "+origem+" , "+destino+" , "+conteudo+" )" ); }
+    public String info() { return  ( conteudo); }
 }

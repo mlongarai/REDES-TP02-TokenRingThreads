@@ -19,16 +19,17 @@ class Estacao implements Runnable {
 
         while (true) {
             p = entrada.pega();    // espera ate pacote existir na entrada
+
             if (p instanceof msg)
             {
                 // tratar mensagem
                 msg m = (msg)p;
                 if ( m.origem.equals(this.nome) )
-                    System.out.println(nome+":> mensagem "+m.info()+" deu a volta");
+                    System.out.println("2345" + ";" + "OK" + ":" + nome + ":" + m.destino + ":" + m.info());
                     // se a originadora e ela, retira mensagem do meio
                 else {
                     if ( m.destino.equals(this.nome) )
-                        System.out.println(nome+":> mensagem "+m.info() +" OK");
+                        System.out.println("2345" + ";" + "naocopiado" + ":" + nome + ":" + m.origem + ":" + m.info());
                     saida.poe(p);
                     // se o destino e ela ou e´ para outra estacao, manda a mensagem adiante
                 }

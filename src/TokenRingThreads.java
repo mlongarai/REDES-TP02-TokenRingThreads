@@ -1,3 +1,7 @@
+/**
+ * Created by longarai on 19/10/17.
+ */
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -5,10 +9,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
-/**
- * Created by longarai on 19/10/17.
- */
 
 public class TokenRingThreads {
 
@@ -26,7 +26,7 @@ public class TokenRingThreads {
 
         // Le arquivo de entrada com lista de IPs dos roteadores vizinhos
         try (BufferedReader inputFile = new BufferedReader(new FileReader (leitura))) {
-            System.out.println("Lendo arquivo: " + leitura);
+            System.out.println("Lendo arquivo: " + leitura + "\n");
 
             while ((linhaArquivo = inputFile.readLine()) != null) {
 
@@ -62,8 +62,8 @@ public class TokenRingThreads {
         }
 
         // debug
-        System.out.println (valores.size ());
-        System.out.print ( parametros );
+        //System.out.println (valores.size ());
+        //System.out.print ( parametros );
 
 
         // criacao e encadeamento de threads representando estacoes
@@ -71,17 +71,17 @@ public class TokenRingThreads {
         MeioFisico outE1 = new MeioFisico();
 
         Fila filaE1 = new Fila(3);
-        Runnable e1 = new Estacao("Estacao1",filaE1,inE1,outE1);
+        Runnable e1 = new Estacao("Bob",filaE1,inE1,outE1);
         Thread te1 = new Thread(e1);
 
         MeioFisico outE2 = new MeioFisico();
         Fila filaE2 = new Fila(3);
-        Runnable e2 = new Estacao("Estacao2",filaE2,outE1,outE2);
+        Runnable e2 = new Estacao("Alice",filaE2,outE1,outE2);
         Thread te2 = new Thread(e2);
 
         MeioFisico outE3 = new MeioFisico();
         Fila filaE3 = new Fila(3);
-        Runnable e3 = new Estacao("Estacao3",filaE3,outE2,outE3);
+        Runnable e3 = new Estacao("Lucy",filaE3,outE2,outE3);
         Thread te3 = new Thread(e3);
 
         // fecha o anel com monitora
@@ -97,14 +97,17 @@ public class TokenRingThreads {
         try{
             // coloca algumas mensagens na fila de mesnagens das estacoes
 
-            filaE1.enfilera("Estacao1","mensagem1");
-            filaE1.enfilera("Estacao2","mensagem2");
+            //Origem Bob (E2)
+            //filaE1.enfilera("Alice","Oi Bob!");
+            //filaE1.enfilera("Lucy","Oi! Bob!");
 
-            filaE2.enfilera("Estacao1","mensagem3");
-            filaE2.enfilera("Estacao3","mensagem4");
+            //Origem Alice (E2)
+            filaE2.enfilera("Bob","Olá Mundo!");
+            //filaE2.enfilera("Lucy","Ola Alice!");
 
-            filaE3.enfilera("Estacao1","mensagem5");
-            filaE3.enfilera("Estacao2","mensagem6");
+            //Origem Lucy (E2)
+            //filaE3.enfilera("Bob","Hello World!");
+            //filaE3.enfilera("Alice","Oi! Mundo!");
 
         } catch (Exception e) {
             System.out.println("Excecao "+e);

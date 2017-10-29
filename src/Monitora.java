@@ -15,12 +15,11 @@ class Monitora implements Runnable	{
         Pacote p;
         while (true) {
             p = in.pega();
-
             /*
             if (p instanceof msg)
                 ((msg)p).info("     Monitora: ");
-            else System.out.println("     Monitora: token");
-             */
+            //else System.out.println("     Monitora: token");
+            */
             out.poe(p);
         }
     }
