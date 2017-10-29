@@ -57,7 +57,6 @@ public class MessageController implements Runnable {
 
 
         if (msg.contains(ACK)) {
-            //System.out.println(msg);
             //Posição 0 = Identificador de ACK
             //Posição 1 = Apelido Destino
             String[] camposDaMensagem = msg.split(";");
@@ -139,7 +138,6 @@ public class MessageController implements Runnable {
                                     Logger.getLogger(MessageController.class.getName()).log(Level.SEVERE, null, ex);
                                 }
                             } else {
-                                //System.out.println("\n Não recebi ACK, enviando TOKEN pra rede");
                                 sendTokenMsg(clientSocket);
                             }
                         }
