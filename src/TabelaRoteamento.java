@@ -15,7 +15,7 @@ public class TabelaRoteamento {
 
     private HashMap<String, Rota> tabelaRoteamento;
     private int tempo = 0;
-    private String ipLocal = "10.32.148.107";
+    public static String ipLocal = "127.0.0.1";
 
     public TabelaRoteamento() {
         this.tabelaRoteamento = new HashMap<String, Rota>();

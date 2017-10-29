@@ -71,6 +71,7 @@ public class TokenRingThreads {
         MeioFisico outE1 = new MeioFisico();
 
         Fila filaE1 = new Fila(3);
+        //Runnable e1 = new Estacao(TabelaRoteamento.ipLocal,filaE1,inE1,outE1);
         Runnable e1 = new Estacao("Bob",filaE1,inE1,outE1);
         Thread te1 = new Thread(e1);
 
@@ -95,7 +96,7 @@ public class TokenRingThreads {
 
 
         try{
-            // coloca algumas mensagens na fila de mesnagens das estacoes
+            // coloca algumas mensagens na fila das estacoes
 
             //Origem Bob (E2)
             //filaE1.enfilera("Alice","Oi Bob!");

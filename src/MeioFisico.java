@@ -10,7 +10,7 @@ class MeioFisico {
             pac = p;
             this.notify();
         }	 catch (InterruptedException ie) {
-            System.out.println("Monitorando pacotes na rede... ");
+            System.out.println("\n" + "Monitorando pacotes na rede... ");
         }
     }
 
@@ -22,7 +22,7 @@ class MeioFisico {
             pac =  null;
             this.notify();
         }	 catch (InterruptedException ie) {
-            System.out.println("Não tem pacotes circulando na rede... ");
+            System.out.println("\n" + "Não tem pacotes circulando na rede... ");
         }
         return p;
     }
