@@ -130,6 +130,7 @@ public class TabelaRoteamento {
         return sb.toString().trim();
     }
 
+
     public String get_table() {
         StringBuilder sb = new StringBuilder();
         String fort = "%-20s | %-7s | %-20s | %-7s | %-3s \n";
@@ -146,4 +147,5 @@ public class TabelaRoteamento {
 
         return sb.toString();
     }
+    
 }

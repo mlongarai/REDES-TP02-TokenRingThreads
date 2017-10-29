@@ -25,7 +25,7 @@ class Estacao implements Runnable {
                 // tratar mensagem
                 msg m = (msg)p;
                 if ( m.origem.equals(this.nome) )
-                    System.out.println("2345" + ";" + "OK" + ":" + nome + ":" + m.destino + ":" + m.info());
+                    System.out.println("2345" + ";" + "OK" + ":" + nome + ":" + m.destino + ":" + m.info() + "\n");
                     // se a originadora e ela, retira mensagem do meio
                 else {
                     if ( m.destino.equals(this.nome) )
