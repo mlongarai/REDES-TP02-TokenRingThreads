@@ -167,7 +167,7 @@ public class MessageController implements Runnable {
     }
 
     private String buildAckMessage(String apelido) {
-        return MSG_DADOS + ";" + ACK + ":" + apelido;
+        return ACK + ";" + apelido;
     }
 
     private void sendPackage(DatagramSocket clientSocket, DatagramPacket sendPacket) {
